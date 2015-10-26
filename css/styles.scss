@@ -189,7 +189,7 @@ q {
 }
 
 // Shortcut
-.text-center {
+.center {
   text-align: center;
 }
 
@@ -429,6 +429,10 @@ a.footnote {
 
 .center {
   text-align: center;
+  
+  img {
+    display: inline-block;
+  }
 }
 
 // About
