@@ -126,7 +126,7 @@ Photoshop은 CC 2015부터 `Export As` 기능을 제공하고 있다. 이 기능
 
 Artboard는 추출도 쉽고 여백까지 저장되지만 아래 이미지와 같이 Artboard Name과 Border를 숨길 수가 없다. 
 <img src="/images/2015-10-23/artboard.png" style="width: 525px;">
-아이콘은 그 크기가 작기으므로 1, 2px도 무척 민감하게 느껴지므로 Zoom에 상관없이 일정한 굵기와 크기를 가진 interface가 항상 나타나 있다는 것은 치명적이다.
+아이콘은 그 크기가 작으므로 1, 2px도 무척 민감하게 느껴지므로 Zoom에 상관없이 일정한 굵기와 크기를 가진 interface가 항상 나타나 있다는 것은 치명적이다.
 
 따라서 여기서 소개할 방법은 여백도 저장되면서 GUI가 시야를 방해하지 않는, <q>Slice를 사용해서 `Save for Web`으로 저장</q>하는 방법이다. Slice Tool은 `Export As`에 비하면 구시대의 유물과도 같은 느낌이지만 한번 만들어두면 손쉽게 전체 아이콘을 저장할 수 있고, Layer의 내용에 상관없이 사용자가 지정한 크기대로 추출해준다는 강점이 있다.
 
