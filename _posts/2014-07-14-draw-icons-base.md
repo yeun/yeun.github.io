@@ -61,8 +61,7 @@ publish: true
 
 #### 선 끝 모양
 
-<div class="center">
-<img src="https://33.media.tumblr.com/e0a341964afbb95c4bc3a32fedca6c70/tumblr_inline_n8pbsyAZ8U1stjbwg.png" style="width:190px;"></div>
+<img src="/images/2014-07-14/stroke.png" style="width:190px;">
 
 선 끝 모양에는 크게 둥근 모양과 각진 모양으로 나눌 수 있다. 이 끝을 어떻게 처리하느냐에 따라 아이콘의 인상이 달라진다.
 
