@@ -395,9 +395,10 @@ q {
     }
   }
   .img-text {
+    margin-bottom: 0;
     height: auto;
     display: inline;
-    padding: 0;
+    padding: 0 3px;
     vertical-align:top;
   }
 }
