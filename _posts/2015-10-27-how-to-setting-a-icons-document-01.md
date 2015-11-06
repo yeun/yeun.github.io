@@ -155,7 +155,7 @@ Artboard는 추출도 쉽고 여백까지 저장되지만 아래 이미지와 �
 이렇게 Slice를 사용해서 아이콘 문서를 생성하고 저장하는 법을 살펴봤다. 현재로는 이 방법이 최선이라고 생각하지만, SVG 파일로 Export 할 수 없고, Save for Web 기능이 언제 사라질지 모르므로 Artboard나 Export As 기능을 사용해서 추출하는 방법도 알고는 있어야 한다. 이 방법은 다음 포스트에서 다루어보겠다.
 
 
-[^related_post]: 관련 포스트 [아이콘 그리기 Photoshop or Illustrator?](2014/07/28/psd-vs-ai.html)
+[^related_post]: 관련 포스트 [아이콘 그리기 Photoshop or Illustrator?](/2014/07/28/psd-or-ai.html)
 
 [^adobe_support]: [Save for Web in Photoshop CC 2015](http://blogs.adobe.com/crawlspace/2015/06/save-for-web-in-photoshop-cc-2015.html)
 
