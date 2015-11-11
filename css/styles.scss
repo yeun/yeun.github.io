@@ -36,7 +36,6 @@ $text-color: #555;
   margin: 0;
   padding: 0;
   border: 0;
-  word-break: keep-all;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
 }
@@ -320,7 +319,7 @@ q {
   display: block;
   height: auto;
   margin: auto 7%;
-  padding: 4em 0;
+  padding: 10% 0;
   overflow: auto;
   border-top: 1px solid #ecedee;
 
@@ -330,7 +329,7 @@ q {
 
   &:hover {
     margin: auto 0;
-    padding: 4em 7%;
+    padding: 10% 7%;
     background-color: #f5f7f9;
     border-color: transparent;
     border-radius: 6px;
