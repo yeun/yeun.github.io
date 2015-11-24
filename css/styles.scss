@@ -55,7 +55,7 @@ body {
   color: $text-color;
   font-family: system, -apple-system, ".SFNSDisplay-Regular", San Francisco, Lato, Apple SD Gothic Neo, 'Spoqa Han Sans', Nanum Barun Gothic,  Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1.65em;
   font-weight: 400;
 }
 
@@ -162,20 +162,24 @@ code {
   margin: auto 3px;
   padding: 0 0.4em;
   font-family: 'Source Code Pro', monospace;
-  font-size: 0.8em;
-  font-weight: 400;
-  border-radius: 2px;
-  color: #777;
-  line-height: 1.5em;
+  font-size: 0.95em;
+  border-radius: 10px;
+  color: #555;
+  line-height: 1.3em;
   display: inline-block;
-  background-color: #f6f7f8;
-  vertical-align: text-top;
+  background-color: #ffee99;
 }
 
 blockquote {
   margin-left: 6%;
-  font-family: 'lora', KoPub Batang, serif;
+  font-family: 'Lora', 'Nanum Myeongjo', KoPub Batang, serif;
+  color: #202020;
   font-size: 17px;
+
+  code {
+    font-family: 'Roboto Slab', Nanum Myeongjo, KoPub Batang, serif;
+    color: #7a7a7a;
+  }
 }
 
 q {
@@ -352,7 +356,8 @@ q {
   padding-top: 5%;
   width: 90%;
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.65em;
+  letter-spacing: 0.3px;
 
   .post-title {
     font-size: 48px;
