@@ -69,14 +69,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 3em 0 1em;
+  margin: 3em 0 auto;
   color: #333;
   line-height: 1.3em;
 }
 
-h1, h2 { font-size: 36px; }
-h3, h4 { font-size: 24px; }
-h5, h6 { font-size: 18px; }
+h1, h2 { font-size: 36px; margin-bottom: 1em; }
+h3, h4 { font-size: 24px; margin-bottom: 1em; }
+h5, h6 { font-size: 18px; margin-bottom: 1.2em; }
 
 img {
   margin: 0 auto;
@@ -102,7 +102,7 @@ ol, ul {
 
   li {
     position: relative;
-    margin: 0 auto 0.5em 6%;
+    margin: 0 auto 0.5em 1.5em;
     list-style-type: none;
 
     > ol, ul {
@@ -171,13 +171,13 @@ code {
 }
 
 blockquote {
-  margin-left: 6%;
-  font-family: 'Lora', 'Nanum Myeongjo', KoPub Batang, serif;
+  font-family: 'Lora', 'Nanum Myeongjo', serif;
   color: #202020;
-  font-size: 17px;
+  font-size: 1.05em;
+  line-height: 1.65em;
 
   code {
-    font-family: 'Roboto Slab', Nanum Myeongjo, KoPub Batang, serif;
+    font-family: 'Roboto Slab', Nanum Myeongjo, serif;
     color: #7a7a7a;
   }
 }
