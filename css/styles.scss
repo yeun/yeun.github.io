@@ -2,8 +2,6 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
-
 $link-color: #0088ff;
 $navbar-height: 70px;
 $container-width: 780px;
@@ -183,10 +181,19 @@ code {
 }
 
 blockquote {
-  font-family: 'Lora', 'Nanum Myeongjo', serif;
-  color: #202020;
-  font-size: 1em;
-  line-height: 1.65em;
+  position: relative;
+  padding-left: 1.5em;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1.5em;
+    border: 2px solid #ecedee;
+    border-radius: 2px;
+  }
+
 
   code {
     font-family: 'Roboto Slab', Nanum Myeongjo, serif;
