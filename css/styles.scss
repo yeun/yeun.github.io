@@ -2,12 +2,11 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
-
 $link-color: #0088ff;
 $navbar-height: 70px;
 $container-width: 780px;
 $text-color: #555;
+$margin-bottom-base: 32px;
 
 /** Medium */
 @font-face {
@@ -76,8 +75,12 @@ h1, h2 { font-size: 36px; margin-bottom: 1em; }
 h3, h4 { font-size: 24px; margin-bottom: 1em; }
 h5, h6 { font-size: 18px; margin-bottom: 1.2em; }
 
+p {
+  margin-bottom: $margin-bottom-base;
+}
+
 img {
-  margin: 0 auto;
+  margin: 0 auto $margin-bottom-base;;
   padding: 10px 0;
   display: block;
   max-width: 100%;
@@ -92,11 +95,20 @@ img {
   }
 }
 
-p, img, ol, ul {
-  margin-bottom: 1.7em;
+figure {
+  margin: 0 auto;
+}
+
+figcaption {
+  margin-top: -($margin-bottom-base / 2);
+  margin-bottom: ($margin-bottom-base * 1.5);
+  font-size: 0.8em;
+  color: #777;
+  text-align: center;
 }
 
 ol, ul {
+  margin-bottom: $margin-bottom-base;
 
   li {
     position: relative;
@@ -169,10 +181,19 @@ code {
 }
 
 blockquote {
-  font-family: 'Lora', 'Nanum Myeongjo', serif;
-  color: #202020;
-  font-size: 1.05em;
-  line-height: 1.65em;
+  position: relative;
+  padding-left: 1.5em;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1.5em;
+    border: 2px solid #ecedee;
+    border-radius: 2px;
+  }
+
 
   code {
     font-family: 'Roboto Slab', Nanum Myeongjo, serif;
@@ -408,6 +429,7 @@ q {
 a.footnote {
   margin: 0 3px;
   padding: 0.1em 0.5em 0.15em;
+  font-family: system, -apple-system, ".SFNSDisplay-Regular", San Francisco, Lato, Apple SD Gothic Neo, 'Spoqa Han Sans', Nanum Barun Gothic,  Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
   color: $link-color;
   border: 1px solid #dcddde;
   border-radius: 3px;
