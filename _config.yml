@@ -1,4 +1,4 @@
-highlighter: pygments
+highlighter: rouge
 paginate: 20
 paginate_path: "/page/page:num/"
 markdown: kramdown
