@@ -6,3 +6,4 @@ host: 0.0.0.0
 gems: [jekyll-paginate]
 home_url: "http://heeyeun.github.io"
 representing_image: ""
+future: true
