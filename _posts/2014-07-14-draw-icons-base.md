@@ -53,7 +53,7 @@ publish: true
 위에서 이야기한 16px, 20px,  24px, 32px, 48px 크기의 아이콘이라면 선의 굵기는 대게 1px, 2px, 3px 로 결정된다. 가장 얇은 선과 가장 굵은 선이 겨우 2px 차이밖에 나지 않으니 별 차이가 있으랴 싶지만 아이콘 전체의 크기가 20 - 50px임을 생각해보면 꽤 큰 차이다.
 
 <div class="center">
-<img src="https://33.media.tumblr.com/253f8a46ce9c0a76a7696f7994410e3d/tumblr_inline_n8pay9k2Ne1stjbwg.png" style="width:337px;"></div>
+<img src="/images/2014-07-14/width.png" style="width:337px;"></div>
 
 선 굵기는 꼭 한가지 일 필요는 없다. 표현하고자 하는 스타일에 따라 두가지 선을 쓰면서 굵은선은 외곽선, 얇은 선은 묘사선 등으로 사용하기도 한다. 
 
@@ -70,7 +70,7 @@ publish: true
 모서리의 곡률(Radius)이다. 모서리가 직각일 수도 있고, radius가 2px, 3px일 수도 있다.
 
 <div class="center">
-<img src="https://33.media.tumblr.com/a105ec4ccef45ead03cbc180eb89fcb8/tumblr_inline_n8pcn4rwtD1stjbwg.png" style="width:329px;"></div>
+<img src="/images/2014-07-14/corner.png" style="width:329px;"></div>
 
 보는 바와 같이 곡률이 날카로울 수록 세련된 인상을, 부드러울 수록 귀여운 인상을 준다.
 
