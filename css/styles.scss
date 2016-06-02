@@ -326,6 +326,10 @@ q {
   color: #777;
   font-weight: 400;
   line-height: 1.5em;
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .divider {
@@ -353,7 +357,7 @@ q {
 .post-summary {
   display: block;
   height: auto;
-  margin: auto 7%;
+  margin: auto 9%;
   padding: 10% 0;
   overflow: auto;
   border-top: 1px solid #ecedee;
@@ -364,7 +368,7 @@ q {
 
   &:hover {
     margin: auto 0;
-    padding: 10% 7%;
+    padding: 10% 9%;
     background-color: #f5f7f9;
     border-color: transparent;
     border-radius: 6px;
