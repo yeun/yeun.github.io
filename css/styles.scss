@@ -4,9 +4,9 @@
 
 $link-color: #0088ff;
 $navbar-height: 70px;
-$container-width: 780px;
+$container-width: 740px;
 $text-color: #555;
-$margin-bottom-base: 32px;
+$margin-bottom-base: 28px;
 
 /** Medium */
 @font-face {
@@ -72,8 +72,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2 { font-size: 36px; margin-bottom: 1em; }
-h3, h4 { font-size: 24px; margin-bottom: 1em; }
-h5, h6 { font-size: 18px; margin-bottom: 1.2em; }
+h3, h4 { font-size: 28px; margin-bottom: 1em; }
+h5, h6 { font-size: 22px; margin-bottom: 1.2em; }
 
 p {
   margin-bottom: $margin-bottom-base;
@@ -115,6 +115,10 @@ ol, ul {
     margin: 0 auto 0.5em 1.5em;
     list-style-type: none;
 
+    p {
+      margin-bottom: 0;
+    }
+
     > ol, ul {
       margin-top: 1em;
     }
@@ -128,6 +132,10 @@ ol, ul {
       color: #333;
     }
   }
+}
+
+ul li {
+  margin-left: 1em;
 }
 
 ol, li > ol {
@@ -295,11 +303,15 @@ q {
   vertical-align: top;
   line-height: 1.7em;
   text-transform: uppercase;
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .post-title {
   display: block;
-  margin:  0.7em 0 0.7em 5%;
+  margin:  0 0 0.7em;
   font-weight: 700;
   text-decoration: none;
   color: #333;
@@ -362,7 +374,7 @@ q {
     }
   }
   .post-title {
-    font-size: 32px;
+    font-size: 42px;
   }
 }
 
@@ -372,9 +384,9 @@ q {
 
 .post {
   margin: 0 auto 10em;
-  padding-top: 5%;
+  padding-top: 10%;
   width: 90%;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.65em;
   letter-spacing: 0.3px;
 
