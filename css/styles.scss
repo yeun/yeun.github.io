@@ -8,6 +8,8 @@ $container-width: 740px;
 $text-color: #555;
 $margin-bottom-base: 28px;
 
+@import "../_sass/syntax";
+
 /** Medium */
 @font-face {
   font-family: "San Francisco";
@@ -206,6 +208,36 @@ blockquote {
   code {
     font-family: 'Roboto Slab', Nanum Myeongjo, serif;
     color: #7a7a7a;
+  }
+}
+
+pre {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f5f7f9;
+  border-radius: 10px;
+  white-space: pre;       /* css-3 */
+  white-space: -moz-pre;  /* Mozilla, since 1999 */
+  white-space: -pre;      /* Opera 4-6 */
+  white-space: -o-pre;    /* Opera 7 */
+  word-wrap: break-word;  /* Internet Explorer 5.5+ */
+  word-break: break-all;
+ 
+  code {
+    margin: 0;
+    padding: 0;
+    max-width: calc(100% - 80px);
+    font-size: 0.8em;
+    white-space: pre-wrap;
+    word-break: break-all;
+    background-color: transparent;
+    border-radius: 0;
+
+    .lineno {
+      color: #B0BEC5;
+      text-align: right;
+      border: 0;
+    }
   }
 }
 
