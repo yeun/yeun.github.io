@@ -1,0 +1,45 @@
+//
+//  𝗕 𝗔 𝗦 𝗘 𝗖 𝗢 𝗔 𝗧
+//  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+::selection {
+  background: $selection-bg;
+}
+
+figure {
+  margin: 0 auto;
+}
+
+img {
+  margin: 0 auto $margin-bottom-base;;
+  padding: 10px 0;
+  display: block;
+  max-width: 100%;
+}
+
+figcaption {
+  margin-top: -($margin-bottom-base / 2);
+  margin-bottom: ($margin-bottom-base * 1.5);
+  font-size: 0.8em;
+  color: $text-grey-color;
+  text-align: center;
+}
+
+hr {
+  height: 1px;
+  width: 50%;
+  margin: 3em auto;
+  border: 0;
+  background-color: $hr-color;
+}
