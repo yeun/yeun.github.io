@@ -2,91 +2,17 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-$link-color: #0088ff;
-$navbar-height: 70px;
-$container-width: 740px;
-$text-color: #555;
-$margin-bottom-base: 28px;
+@import '../_sass/color';
+@import '../_sass/variables';
 
-@import "../_sass/syntax";
+@import '../_sass/basecoat';
+@import '../_sass/grid';
+@import '../_sass/type';
+@import '../_sass/syntax';
+@import '../_sass/post';
 
-/** Medium */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: normal;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2");
-}
-
-/** Semi Bold */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 500;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff2");
-}
-
-/** Bold */ 
-@font-face {
-  font-family: "San Francisco";
-  font-weight: bold;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2");
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
-}
-
-a {
-  color: $link-color;
-  text-decoration: none;
-  font-weight: 400;
-  transition-property: background-color, margin, padding, color, border, border-radius;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-}
-
-body {
-  margin-bottom: 70px;
-  padding-top: calc(#{$navbar-height} + 3%);
-  color: $text-color;
-  font-family: system, -apple-system, ".SFNSDisplay-Regular", San Francisco, Lato, Apple SD Gothic Neo, 'Spoqa Han Sans', Nanum Barun Gothic,  Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
-  font-size: 16px;
-  line-height: 1.65em;
-  font-weight: 400;
-}
-
-::selection {
-  background: #eaebec;
-}
-
-.container {
-  max-width: $container-width;
-  margin: 0 auto; 
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 3em 0 auto;
-  color: #333;
-  line-height: 1.3em;
-}
-
-h1, h2 { font-size: 36px; margin-bottom: 1em; }
-h3, h4 { font-size: 28px; margin-bottom: 1em; }
-h5, h6 { font-size: 22px; margin-bottom: 1.2em; }
-
-p {
-  margin-bottom: $margin-bottom-base;
-}
 
 img {
-  margin: 0 auto $margin-bottom-base;;
-  padding: 10px 0;
-  display: block;
-  max-width: 100%;
-
   &.img-small {
     width: auto;
     height: auto;
@@ -95,87 +21,6 @@ img {
     padding: 0 4px;
     vertical-align:top;
   }
-}
-
-figure {
-  margin: 0 auto;
-}
-
-figcaption {
-  margin-top: -($margin-bottom-base / 2);
-  margin-bottom: ($margin-bottom-base * 1.5);
-  font-size: 0.8em;
-  color: #777;
-  text-align: center;
-}
-
-ol, ul {
-  margin-bottom: $margin-bottom-base;
-
-  li {
-    position: relative;
-    margin: 0 auto 0.5em 1.5em;
-    list-style-type: none;
-
-    p {
-      margin-bottom: 0;
-    }
-
-    > ol, ul {
-      margin-top: 1em;
-    }
-
-    &:after {
-      position: absolute;
-      top: 0;
-      left: -2.5em;
-      width: 2em;
-      text-align: right;
-      color: #333;
-    }
-  }
-}
-
-ul li {
-  margin-left: 1em;
-}
-
-ol, li > ol {
-  li {
-    counter-increment: list;
-
-    &:after {
-      content: counter(list) ".";
-    }
-  }
-}
-
-ul {
-  li {
-    &:after {
-      content: "•";
-    }
-
-    ul {
-      li {
-        &:after {
-          color: #999;
-        }
-      }
-    }
-  }
-}
-
-strong {
-  font-weight: 600;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  width: 50%;
-  margin: 3em auto;
-  border-bottom: 1px solid #ecedee;
 }
 
 code {
@@ -354,13 +199,12 @@ q {
 
 .description {
   width: 100%;
-  font-size: 18px;
-  color: #777;
-  font-weight: 400;
-  line-height: 1.5em;
 
   p {
     margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #777;
   }
 }
 
@@ -422,7 +266,7 @@ q {
   margin: 0 auto 10em;
   padding-top: 10%;
   width: 90%;
-  font-size: 22px;
+  font-size: $post-font-size-base;
   line-height: 1.65em;
   letter-spacing: 0.3px;
 

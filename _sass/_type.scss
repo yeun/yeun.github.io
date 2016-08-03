@@ -1,0 +1,160 @@
+//
+//  𝗧 𝗬 𝗣 𝗘
+//  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+//
+//  IMPORT SAN FRANCISCO
+//  ───────────────────────────────────────────────────────────────────────────
+
+// Medium
+@font-face {
+  font-family: "San Francisco";
+  font-weight: normal;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2");
+}
+
+// Semi Bold
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff2");
+}
+
+// Bold
+@font-face {
+  font-family: "San Francisco";
+  font-weight: bold;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2");
+}
+
+
+
+//  DEFAULT SETTING
+//  ───────────────────────────────────────────────────────────────────────────
+
+body {
+  color: $text-color;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+}
+
+
+
+//  HEADING
+//  ───────────────────────────────────────────────────────────────────────────
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 3em;
+  margin-bottom: 0;
+  color: $heading-color;
+  line-height: 1.3;
+}
+
+h1,
+h2 {
+  font-size: 36px;
+  margin-bottom: 1em;
+}
+
+h3,
+h4 {
+  font-size: 28px;
+  margin-bottom: 1em;
+}
+
+h5,
+h6 {
+  font-size: 22px;
+  margin-bottom: 1.2em;
+}
+
+
+//  BODY
+//  ───────────────────────────────────────────────────────────────────────────
+
+p {
+  font-size: $font-size-base;
+  margin-bottom: $margin-bottom-base;
+}
+
+
+//  LISTS
+//  ───────────────────────────────────────────────────────────────────────────
+
+//  Remove Default List Style
+ol,
+ul {
+  margin-bottom: $margin-bottom-base;
+  padding: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+//  Custom List Style
+ol,
+ul {
+  > li {
+    margin: 0 auto 0.3em 2em;
+
+    &:before {
+      position: absolute;
+      width: 2em;
+      margin-left: -2em;
+      padding-right: 0.8em;
+      display: inline-block;
+      box-sizing: border-box;
+      text-align: right;
+      font-family: 'Rasa';
+      font-size: 1.1em;
+      font-weight: 500;
+    }
+  }
+}
+
+ol {
+  counter-reset: section;
+
+  > li:before {
+    font-feature-settings: "liga" on,"lnum" on;
+    -moz-font-feature-settings: "liga" on,"lnum" on;
+    -webkit-font-feature-settings: "liga" on,"lnum" on;
+    counter-increment: section;
+    content: counter(section) ". ";
+  }
+}
+
+ul {
+  > li:before {
+    content: "•";
+    padding-right: 1.05em;
+  }
+}
+
+//  Refine Spacing
+ol,
+ul {
+  > li {
+
+    p {
+      margin-bottom: 0;
+    }
+
+    > ol,
+    > ul {
+      margin-top: 1em;
+      margin-left: 0.7em;
+    }
+  }
+}
+
+
+
