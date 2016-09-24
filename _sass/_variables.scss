@@ -3,15 +3,18 @@
 //  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 $font-family-base: system, -apple-system, ".SFNSDisplay-Regular", San Francisco, Lato, Apple SD Gothic Neo, 'Spoqa Han Sans', Nanum Barun Gothic,  Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
-$font-size-base: 16px;
-$line-height-base: 1.65;
-$heading-color: #333;
-$text-grey-color: #777;
+$font-size-base:      16px;
+$line-height-base:    1.65;
+$heading-color:       $oc-gray-8;
+$text-color:          $oc-gray-7;
+$text-gray-color:     $oc-gray-6;
 $post-font-size-base: 21px;
-$margin-bottom-base: 28px;
-$hr-color: #eee;
-$link-color: #0088ff;
-$navbar-height: 70px;
-$container-width: 740px;
-$text-color: #555;
-$selection-bg: $grey-2;
+$margin-bottom-base:  28px;
+$hr-color:            $oc-gray-3;
+$border-color:        $oc-gray-4;
+$bg-color:            $oc-gray-0;
+$link-color:          $oc-blue-5;
+$navbar-color:        $text-color;
+$navbar-height:       70px;
+$container-width:     740px;
+$selection-bg:        $oc-gray-2;
