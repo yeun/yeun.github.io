@@ -2,7 +2,7 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import '../_sass/color';
+@import '../node_modules/open-color/open-color.scss';
 @import '../_sass/variables';
 
 @import '../_sass/basecoat';
@@ -59,7 +59,7 @@ blockquote {
 pre {
   margin-bottom: 40px;
   padding: 20px;
-  background-color: #f5f7f9;
+  background-color: $bg-color;
   border-radius: 10px;
   white-space: pre;       /* css-3 */
   white-space: -moz-pre;  /* Mozilla, since 1999 */
@@ -79,7 +79,7 @@ pre {
     border-radius: 0;
 
     .lineno {
-      color: #B0BEC5;
+      color: $oc-gray-5;
       text-align: right;
       border: 0;
     }
@@ -132,7 +132,7 @@ q {
   float: left;
   padding: 0 3%;
   font-size: 20px;
-  color: #333;
+  color: $heading-color;
   line-height: $navbar-height;
   text-transform: lowercase;
   font-weight: 600;
@@ -145,7 +145,7 @@ q {
 
   a.navbar-menu {
     padding: 23px 20px 26px;
-    color: #333;
+    color: $navbar-color;
     line-height: $navbar-height;
     text-transform: lowercase;
     font-weight: 600;
@@ -154,17 +154,17 @@ q {
     &.menu-about:hover,
     &.menu-about:focus,
     &.menu-about.active {
-      color: coral;
+      color: $oc-orange-5;
     }
 
     &.menu-blog:hover,
     &.menu-blog:focus,
     &.menu-blog.active {
-      color: #44dd71;
+      color: $oc-teal-5;
     }
 
     &.menu-dribbble:hover {
-      color: #ff5f99;
+      color: $oc-pink-5;
     }
   }
 }
@@ -175,7 +175,7 @@ q {
 .date {
   display: block;
   font-size: 16px;
-  color: #999;
+  color: $text-gray-color;
   font-weight: 400;
   vertical-align: top;
   line-height: 1.7em;
@@ -191,7 +191,7 @@ q {
   margin:  0 0 0.7em;
   font-weight: 700;
   text-decoration: none;
-  color: #333;
+  color: $text-color;
   line-height: 1.3em;
   word-break: keep-all;
   -ms-word-break: keep-all;
@@ -204,7 +204,7 @@ q {
     margin-bottom: 0;
     font-size: 18px;
     line-height: 1.5em;
-    color: #777;
+    color: $text-gray-color;
   }
 }
 
@@ -236,7 +236,7 @@ q {
   margin: auto 9%;
   padding: 10% 0;
   overflow: auto;
-  border-top: 1px solid #ecedee;
+  border-top: 1px solid $hr-color;
 
   &:first-child {
     border: none;
@@ -245,7 +245,7 @@ q {
   &:hover {
     margin: auto 0;
     padding: 10% 9%;
-    background-color: #f5f7f9;
+    background-color: $bg-color;
     border-color: transparent;
     border-radius: 6px;
 
@@ -297,7 +297,7 @@ q {
       border-bottom: 2px solid $link-color;
     }
   }
-  h4, h6 { color: #727476; }
+  h4, h6 { color: $text-gray-color; }
 
   h1, h2, h3, h4, h5, h6 {
     a:not(.footnote) {
@@ -323,7 +323,7 @@ a.footnote {
   padding: 0.1em 0.5em 0.15em;
   font-family: system, -apple-system, ".SFNSDisplay-Regular", San Francisco, Lato, Apple SD Gothic Neo, 'Spoqa Han Sans', Nanum Barun Gothic,  Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
   color: $link-color;
-  border: 1px solid #dcddde;
+  border: 1px solid $hr-color;
   border-radius: 3px;
   transition: background-color .2s ease,
               color .2s ease,
@@ -341,7 +341,7 @@ a.footnote {
 .footnotes {
   margin: 10em auto 0;
   padding-top: 2em;
-  border-top: 1px solid #eee;
+  border-top: 1px solid $hr-color;
 }
 
 .center {
