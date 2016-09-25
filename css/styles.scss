@@ -2,9 +2,8 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import '../node_modules/open-color/open-color.scss';
+@import '../_sass/open-color';
 @import '../_sass/variables';
-
 @import '../_sass/basecoat';
 @import '../_sass/grid';
 @import '../_sass/type';
@@ -29,10 +28,10 @@ code {
   font-family: 'Source Code Pro', monospace;
   font-size: 0.95em;
   border-radius: 10px;
-  color: #555;
+  color: $text-color;
   line-height: 1.3em;
   display: inline-block;
-  background-color: #ffee99;
+  background-color: $oc-yellow-2;
 }
 
 blockquote {
@@ -45,14 +44,14 @@ blockquote {
     top: 0;
     bottom: 0;
     margin-left: -1.5em;
-    border: 2px solid #ecedee;
+    border: 2px solid $blockquote-color;
     border-radius: 2px;
   }
 
 
   code {
     font-family: 'Roboto Slab', Nanum Myeongjo, serif;
-    color: #7a7a7a;
+    color: $text-gray-color;
   }
 }
 
@@ -77,12 +76,26 @@ pre {
     word-break: break-all;
     background-color: transparent;
     border-radius: 0;
+  }
+}
 
-    .lineno {
-      color: $oc-gray-5;
-      text-align: right;
-      border: 0;
-    }
+.highlight {
+  margin-bottom: 40px;
+  pre {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+  }
+
+  > pre {
+    padding: 30px 40px 20px;
+  }
+
+  .lineno {
+    padding-right: 20px;
+    color: $oc-gray-5;
+    text-align: right;
+    border: 0;
   }
 }
 
@@ -211,7 +224,7 @@ q {
 .divider {
   margin: 0 auto;
   display: block;
-  color: #ccc;
+  color: $hr-color;
   display: inline-block;
   margin: 0 -6px;
   height: 0.5em;
