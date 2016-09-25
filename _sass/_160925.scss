@@ -1,0 +1,75 @@
+.bg-box {
+  width: 49%;
+  padding: 40px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  transition: background-color 0.2s ease;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+
+  &-block {
+    width: 100%;
+
+    > .bg-box {
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
+  }
+
+  &.bg-white {
+    border: 1px solid $oc-gray-3;
+
+    &.bg-hover:hover,
+    &.bg-hover:focus,
+    &.bg-hover:active {
+      background-color: $oc-gray-1;
+    }
+  }
+}
+
+.border-box {
+  width: 49%;
+  padding: 40px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 6px;
+  margin-bottom: 20px;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+@for $number from 0 through $oc-color-spectrum {
+  @each $color in map-get($oc-gray-list, "#{$number}") {
+    .color-gray-#{$number} {
+      color: $color;
+    }
+    .bg-gray-#{$number} {
+      background-color: $color;
+
+      @if $number == 0 or 1 or 2 {
+        &.bg-hover:hover,
+        &.bg-hover:focus,
+        &.bg-hover:active {
+          $hover-number: $number + 2;
+          background-color: map-get($oc-gray-list, "#{$hover-number}");
+        }
+      }
+    }
+    .border-gray-#{$number} {
+      border-color: $color;
+    }
+  }
+}
+
+.bg-gray-9 {
+  hr {
+    margin: 1.5em auto;
+  }
+}
