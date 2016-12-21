@@ -2,6 +2,109 @@
 //  𝗣 𝗢 𝗦 𝗧  𝗧 𝗬 𝗣 𝗘
 //  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+
+// Post
+//=============================================================
+
+.post {
+  margin: 0 auto 10em;
+  padding-top: 10%;
+  width: 90%;
+  font-size: $post-font-size-base;
+  line-height: 1.65em;
+  letter-spacing: 0.3px;
+
+  .post-title {
+    font-size: 48px;
+    line-height: 1.3em;
+  }
+
+  .back-btn {
+    margin-bottom: 2em;
+    text-align: center;
+    text-transform: uppercase;
+
+    a {
+      color: $text-color;
+    }
+  }
+}
+
+.post-content {
+  margin-top: 120px;
+  color: $text-color;
+
+  a {
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      border-bottom: 2px solid $link-color;
+    }
+  }
+  h4, h6 { color: $text-gray-color; }
+
+  h1, h2, h3, h4, h5, h6 {
+    a:not(.footnote) {
+      color: $text-color;
+      border-bottom: 3px solid $link-color;
+
+      &:hover {
+        color: $link-color;
+      }
+    }
+  }
+  .img-text {
+    margin-bottom: 0;
+    height: auto;
+    display: inline;
+    padding: 0 3px;
+    vertical-align:top;
+  }
+}
+
+a.footnote {
+  margin: 0 3px;
+  padding: 0.1em 0.5em 0.15em;
+  font-family: system, -apple-system, ".SFNSDisplay-Regular", San Francisco, Lato, Apple SD Gothic Neo, 'Spoqa Han Sans', Nanum Barun Gothic,  Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
+  color: $link-color;
+  border: 1px solid $hr-color;
+  border-radius: 3px;
+  transition: background-color .2s ease,
+              color .2s ease,
+              border-color .2s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: rgba($link-color, 0.1);
+    color: $link-color;
+    border: 1px solid $link-color;
+  }
+}
+
+.footnotes {
+  margin: 10em auto 0;
+  padding-top: 2em;
+  border-top: 1px solid $hr-color;
+}
+
+.center {
+  text-align: center;
+  
+  img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
 .post p {
   font-size: $post-font-size-base;
+}
+
+.post,
+.post p {
+  @media (max-width: 543px) {
+    font-size: 17px;
+    line-height: 1.5;
+  }
 }
