@@ -19,3 +19,20 @@ $navbar-color:        $text-color;
 $navbar-height:       70px;
 $container-width:     740px;
 $selection-bg:        $oc-gray-2;
+
+// Lists
+$li-line-height: 1.55;
+$li-bottom-space: 0.7em;
+$li-bullets-width: 1.7em;
+
+$ol-bullets-font: inherit;
+$ol-bullets-font-size: 1em;
+$ol-bullets-font-line-height: inherit;
+$ol-bullets-right-space: 0.65em;
+
+$ul-bullets-font: inherit;
+$ul-bullets-font-size: 1.2em;
+$ul-bullets-font-line-height: 1.2;
+$ul-bullets-right-space: 0.65em;
+
+$li-child-size-ratio: 0.95;

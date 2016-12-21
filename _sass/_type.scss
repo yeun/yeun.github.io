@@ -62,59 +62,61 @@ p {
 //  LISTS
 //  ───────────────────────────────────────────────────────────────────────────
 
-//  Remove Default List Style
-ol,
+//  Reset list
+ol, 
 ul {
-  margin-bottom: $margin-bottom-base;
+  margin: 0 0 $margin-bottom-base;
   padding: 0;
   list-style: none;
   list-style-image: none;
 }
 
-//  Custom List Style
-ol,
+//  Positioning Bullets
+ol, 
 ul {
   > li {
-    margin: 0 auto 0.1em 2em;
-
     &:before {
       position: absolute;
-      width: 2em;
-      margin-left: -2em;
-      padding-right: 0.8em;
+      width: $li-bullets-width;
+      margin-left: -$li-bullets-width;
       display: inline-block;
       box-sizing: border-box;
       text-align: right;
-      font-family: 'Rasa';
-      font-size: 1.1em;
-      font-weight: 500;
     }
   }
 }
 
+// Restyle <ol>
 ol {
   counter-reset: section;
 
   > li:before {
-    font-feature-settings: "liga" on,"lnum" on;
-    -moz-font-feature-settings: "liga" on,"lnum" on;
-    -webkit-font-feature-settings: "liga" on,"lnum" on;
     counter-increment: section;
-    content: counter(section) ". ";
+    content: counter(section) ".";
+    padding-right: $ol-bullets-right-space;
+    font-family: $ol-bullets-font;
+    font-size: $ol-bullets-font-size;
+    line-height: $ol-bullets-font-line-height;
   }
 }
 
+// Restyle <ul>
 ul {
   > li:before {
     content: "•";
-    padding-right: 1.05em;
+    padding-right: $ul-bullets-right-space;
+    font-family: $ul-bullets-font;
+    font-size: $ul-bullets-font-size;
+    line-height: $ul-bullets-font-line-height;
   }
 }
 
 //  Refine Spacing
-ol,
+ol, 
 ul {
   > li {
+    margin: 0 auto $li-bottom-space $li-bullets-width;
+    line-height: $li-line-height;
 
     p {
       margin-bottom: 0;
@@ -122,11 +124,18 @@ ul {
 
     > ol,
     > ul {
-      margin-top: 1em;
-      margin-left: 0.7em;
+      margin-top: $li-bottom-space;
     }
   }
 }
 
-
+li {
+  > ol,
+  > ul {
+    > li {
+      font-size: ($li-child-size-ratio * 1em);
+      margin: 0 auto ($li-bottom-space * $li-child-size-ratio) ($li-bullets-width * $li-child-size-ratio);
+    }
+  }
+}
 
