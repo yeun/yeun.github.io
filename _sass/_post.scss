@@ -12,11 +12,16 @@
   width: 90%;
   font-size: $post-font-size-base;
   line-height: 1.65em;
-  letter-spacing: 0.3px;
 
   .post-title {
     font-size: 48px;
-    line-height: 1.3em;
+    letter-spacing: -0.02em;
+    line-height: 1.25em;
+
+    @media (max-width: 543px) {
+      font-size: 30px;
+      line-height: 1.05em;
+    }
   }
 
   .back-btn {
@@ -31,8 +36,12 @@
 }
 
 .post-content {
-  margin-top: 120px;
+  margin-top: 60px;
   color: $text-color;
+
+  @media (max-width: 543px) {
+    margin-top: 0;
+  }
 
   a {
     border-bottom: 2px solid transparent;
@@ -104,7 +113,7 @@ a.footnote {
 .post,
 .post p {
   @media (max-width: 543px) {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.5;
   }
 }

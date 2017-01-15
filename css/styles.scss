@@ -187,6 +187,7 @@ q {
 
 .date {
   display: block;
+  margin-bottom: 7px;
   font-size: 16px;
   color: $text-gray-color;
   font-weight: 400;
@@ -195,17 +196,17 @@ q {
   text-transform: uppercase;
 
   p {
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
 .post-title {
   display: block;
-  margin:  0 0 0.7em;
+  margin:  0 0 0.4em;
   font-weight: 700;
   text-decoration: none;
   color: $text-color;
-  line-height: 1.3em;
+  line-height: 1.2em;
   word-break: keep-all;
   -ms-word-break: keep-all;
 }
@@ -215,9 +216,13 @@ q {
 
   p {
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5em;
     color: $text-gray-color;
+
+    @media (max-width: 543px) {
+      font-size: 16px;
+    }
   }
 }
 
@@ -237,6 +242,10 @@ q {
 
 .post-list {
   padding: 0 3%;
+
+  @media (max-width: 543px) {
+    padding: 0;
+  }
 }
 
 .posts {
@@ -251,6 +260,11 @@ q {
   overflow: auto;
   border-top: 1px solid $hr-color;
 
+  @media (max-width: 543px) {
+    margin: 0;
+    padding: 10% 5%;
+  }
+
   &:first-child {
     border: none;
   }
@@ -262,12 +276,24 @@ q {
     border-color: transparent;
     border-radius: 6px;
 
+
+    @media (max-width: 543px) {
+      padding: 10% 5%;
+    }
+
     + .post-summary {
       border-color: transparent;
     }
   }
   .post-title {
     font-size: 42px;
+    letter-spacing: -0.02em;
+    line-height: 1.25em;
+
+    @media (max-width: 543px) {
+      font-size: 30px;
+      line-height: 1.05em;
+    }
   }
 }
 
