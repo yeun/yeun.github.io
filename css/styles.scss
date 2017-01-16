@@ -258,7 +258,7 @@ q {
   margin: auto 9%;
   padding: 10% 0;
   overflow: auto;
-  border-top: 1px solid $hr-color;
+  border-top: 0.5px solid $hr-color;
 
   @media (max-width: 543px) {
     margin: 0;
