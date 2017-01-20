@@ -1,0 +1,77 @@
+
+code {
+  margin: auto 3px;
+  padding: 0 0.4em;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.9em;
+  border-radius: 3px;
+  color: $text-color;
+  line-height: 1.3em;
+  display: inline-block;
+  background-color: $oc-gray-1;
+}
+
+blockquote {
+  position: relative;
+  padding-left: 1.5em;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1.5em;
+    border: 2px solid $blockquote-color;
+    border-radius: 2px;
+  }
+
+
+  code {
+    font-family: 'Roboto Slab', Nanum Myeongjo, serif;
+    color: $text-gray-color;
+  }
+}
+
+pre {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: $bg-color;
+  border-radius: 10px;
+  white-space: pre;       /* css-3 */
+  white-space: -moz-pre;  /* Mozilla, since 1999 */
+  white-space: -pre;      /* Opera 4-6 */
+  white-space: -o-pre;    /* Opera 7 */
+  word-wrap: break-word;  /* Internet Explorer 5.5+ */
+  word-break: break-all;
+ 
+  code {
+    margin: 0;
+    padding: 0;
+    max-width: calc(100% - 80px);
+    font-size: 0.8em;
+    white-space: pre-wrap;
+    word-break: break-all;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}
+
+.highlight {
+  margin-bottom: 40px;
+  pre {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+  }
+
+  > pre {
+    padding: 30px 40px 20px;
+  }
+
+  .lineno {
+    padding-right: 20px;
+    color: $oc-gray-5;
+    text-align: right;
+    border: 0;
+  }
+}

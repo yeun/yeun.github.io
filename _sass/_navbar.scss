@@ -1,0 +1,80 @@
+// Navbar
+//=============================================================
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  height: $navbar-height;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(0, 20, 40, 0.08);
+  text-align: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  z-index: 1000;
+
+  @media (max-width: 543px) {
+    height: 50px;
+  }
+}
+
+.navbar-container {
+  padding: 0 3%;
+}
+
+.blog-title {
+  display: inline-block;
+  float: left;
+  padding: 0 3%;
+  font-size: 20px;
+  color: $heading-color;
+  line-height: $navbar-height;
+  text-transform: lowercase;
+  font-weight: 600;
+
+  @media (max-width: 543px) {
+    font-size: 18px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+  }
+}
+
+.navbar-menus {
+  display: inline-block;
+  float: right;
+  font-size: 18px;
+
+  a.navbar-menu {
+    padding: 23px 20px 26px;
+    color: $navbar-color;
+    line-height: $navbar-height;
+    text-transform: lowercase;
+    font-weight: 600;
+
+    &.menu-about:hover,
+    &.menu-about:focus,
+    &.menu-about.active {
+      color: $oc-orange-5;
+    }
+
+    &.menu-blog:hover,
+    &.menu-blog:focus,
+    &.menu-blog.active {
+      color: $oc-teal-5;
+    }
+
+    &.menu-dribbble:hover {
+      color: $oc-pink-5;
+    }
+
+    @media (max-width: 543px) {
+      padding: 13px 20px 17px;
+      font-size: 16px;
+      line-height: 47px;
+      letter-spacing: -0.03em;
+    }
+  }
+}

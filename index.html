@@ -8,14 +8,14 @@ layout: default
       <div class="posts">
         {% for post in paginator.posts %}
           <a href="{{ post.url }}" class="post-summary">
-            <div class="post-info date">
-              <p>{{ post.date | date_to_string }}</p>
+            <div class="post-date">
+              {{ post.date | date_to_string }}
             </div>
             <h3 class="post-title">
               {{ post.title }}
             </h3>
             <div class="post-info description">
-              <p>{{ post.description }}</p>
+              {{ post.description }}
             </div>
           </a>
         {% endfor %}

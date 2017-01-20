@@ -1,0 +1,32 @@
+@mixin date-style($margin-bottom, $font-size, $font-size-mobile) {
+  display: block;
+  margin-bottom: $margin-bottom;
+  color: $text-gray-color;
+  font-size: $font-size;
+  font-weight: 400;
+  vertical-align: top;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @media (max-width: 543px) {
+    font-size: $font-size-mobile;
+  }
+}
+
+@mixin post-title($font-size, $font-size-mobile) {
+  display: block;
+  margin:  0 0 0.4em;
+  font-size: $font-size;
+  color: $text-color;
+  font-weight: 700;
+  line-height: 1.25em;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  word-break: keep-all;
+  -ms-word-break: keep-all;
+
+  @media (max-width: 543px) {
+    font-size: $font-size-mobile;
+    line-height: 1.05em;
+  }
+}

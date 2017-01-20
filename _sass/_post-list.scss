@@ -1,0 +1,93 @@
+
+// Post list
+//=============================================================
+
+.post-list {
+  padding: 0 3%;
+
+  @media (max-width: 543px) {
+    padding: 0;
+  }
+}
+
+.posts {
+  margin: 0 auto;
+}
+
+// Post card - Desktop style
+.post-summary {
+  display: block;
+  height: auto;
+  margin: auto 9%;
+  padding: 10% 0;
+  overflow: auto;
+  border-top: 1px solid $hr-color;
+
+  &:first-child {
+    border-top: none;
+  }
+
+  &:hover {
+    margin: auto 0;
+    padding: 10% 9%;
+    background-color: $bg-color;
+    border-color: transparent;
+    border-radius: 6px;
+
+    + .post-summary {
+      border-color: transparent;
+    }
+  }
+}
+
+// Post card - Mobile style
+@media (max-width: 543px) {
+  .post-summary {
+    margin: 0 0 6px;
+    padding: 6% 5%;
+    border-bottom: 1px solid $hr-color;
+    outline: 6px solid $oc-gray-1;
+
+    &:first-child {
+      margin-top: 6px;
+      border-top: 0.5px solid $hr-color;
+    }
+
+    &:hover {
+      margin: 0 0 6px;
+      padding: 6% 5%;
+      border-radius: 0;
+      border-top: 0.5px solid $hr-color;
+      border-bottom: 0.5px solid $hr-color;
+      outline: 6px solid $oc-gray-0;
+
+      &:first-child {
+        margin-top: 6px;
+      }
+
+      + .post-summary {
+        border-color: $hr-color;
+      }
+    }
+  }
+}
+
+.post-date {
+  @include date-style(5px, 16px, 14px);
+}
+
+.post-title {
+  @include post-title(42px, 26px);
+}
+
+.description {
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 20px;
+  line-height: 1.5em;
+  color: $text-gray-color;
+
+  @media (max-width: 543px) {
+    font-size: 15px;
+  }
+}

@@ -7,31 +7,17 @@
 //=============================================================
 
 .post {
-  margin: 0 auto 10em;
+  margin: 0 auto 3em;
   padding-top: 10%;
   width: 90%;
   font-size: $post-font-size-base;
   line-height: 1.65em;
 
-  .post-title {
-    font-size: 48px;
-    letter-spacing: -0.02em;
-    line-height: 1.25em;
-
-    @media (max-width: 543px) {
-      font-size: 30px;
-      line-height: 1.05em;
-    }
+  .post-date {
+    @include date-style(3px, 20px, 16px);
   }
-
-  .back-btn {
-    margin-bottom: 2em;
-    text-align: center;
-    text-transform: uppercase;
-
-    a {
-      color: $text-color;
-    }
+  .post-title {
+    @include post-title(48px, 30px);
   }
 }
 
@@ -40,14 +26,30 @@
   color: $text-color;
 
   @media (max-width: 543px) {
-    margin-top: 0;
+    margin-top: 30px;
+  }
+
+  img {
+    &.img-small {
+      width: auto;
+      height: auto;
+      display:inline;
+      margin-bottom: 0;
+      padding: 0 4px;
+      vertical-align:top;
+    }
   }
 
   a {
-    border-bottom: 2px solid transparent;
+    color: $link-text-color;
+    background-image: linear-gradient(to bottom,$link-color 50%,rgba(0,0,0,0) 50%);
+    background-repeat: repeat-x;
+    background-size: 2px 0.18em;
+    background-position: 0 1.09em;
 
     &:hover {
-      border-bottom: 2px solid $link-color;
+      color: $link-active-color;
+      background-image: linear-gradient(to bottom,$link-active-color 50%,rgba(0,0,0,0) 50%);
     }
   }
   h4, h6 { color: $text-gray-color; }
@@ -62,6 +64,7 @@
       }
     }
   }
+
   .img-text {
     margin-bottom: 0;
     height: auto;
@@ -73,11 +76,16 @@
 
 a.footnote {
   margin: 0 3px;
-  padding: 0.1em 0.5em 0.15em;
+  padding: 0.08em 0.4em 0.1em;
   font-family: system, -apple-system, ".SFNSDisplay-Regular", San Francisco, Lato, Apple SD Gothic Neo, 'Spoqa Han Sans', Nanum Barun Gothic,  Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
-  color: $link-color;
-  border: 1px solid $hr-color;
-  border-radius: 3px;
+  font-size: 0.9em;
+  color: $link-text-color;
+  font-weight: 700;
+  line-height: 1;
+  border: 1px solid $link-color;
+  border-radius: 20px;
+  background-color: rgba($link-color, 0.05);
+  background-image: none;
   transition: background-color .2s ease,
               color .2s ease,
               border-color .2s ease;
@@ -85,15 +93,16 @@ a.footnote {
   &:hover,
   &:focus,
   &:active {
-    background-color: rgba($link-color, 0.1);
-    color: $link-color;
+    color: $oc-white;
+    background-color: $link-color;
+    background-image: none;
     border: 1px solid $link-color;
   }
 }
 
 .footnotes {
-  margin: 10em auto 0;
-  padding-top: 2em;
+  margin: 12vw auto 0;
+  padding-top: 1vw;
   border-top: 1px solid $hr-color;
 }
 
@@ -116,4 +125,20 @@ a.footnote {
     font-size: 18px;
     line-height: 1.5;
   }
+}
+
+
+// Facebook comments
+//=============================================================
+
+.fb-root {
+  display: none;
+}
+
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget span iframe[style] {
+  margin-top: 40px;
+  min-width: 100% !important;
+  width: 100% !important;
 }

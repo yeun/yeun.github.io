@@ -6,7 +6,7 @@ layout: default
 <div class="wrapper">
   <div class="container">
     <div class="post">
-      <span class="post-info date">
+      <span class="post-date">
         {{ page.date | date_to_string }}
       </span>
       <h1 class="post-title">
@@ -15,29 +15,18 @@ layout: default
       <div class="post-content">
         {{ content }}
       </div>
-    </div>
-    {% for post in site.related_posts limit:5 %}
-      {% assign match = false %}
-      {% for category in post.categories %}
-        {% if page.categories contains category %}
-          {% assign match = true %}
-        {% endif %}
-      {% endfor %}
-      {% if match %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-    <div class="fb-like"
-         data-share="true"
-         data-width="292"
-         data-show-faces="true">
-    </div>
-    <div class="fb-comments" 
-         data-href="http://yeun.github.io{{ page.url }}" 
-         data-num-posts="5"
-         data-numposts="10"
-         data-width="100%"
-         data-colorscheme="light">
+      <div class="fb-like"
+           data-share="true"
+           data-width="292"
+           data-show-faces="true">
+      </div>
+      <div class="fb-comments" 
+           data-href="http://yeun.github.io{{ page.url }}" 
+           data-num-posts="5"
+           data-numposts="10"
+           data-width="100%"
+           data-colorscheme="light">
+      </div>
     </div>
   </div>
 </div>

@@ -6,6 +6,11 @@
 body {
   margin-bottom: 70px;
   padding-top: calc(#{$navbar-height} + 3%);
+
+  @media (max-width: 543px) {
+    margin-bottom: 0;
+    padding-top: 50px;
+  }
 }
 
 .container {
