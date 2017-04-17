@@ -52,6 +52,7 @@
       background-image: linear-gradient(to bottom,$link-active-color 50%,rgba(0,0,0,0) 50%);
     }
   }
+
   h4, h6 { color: $text-gray-color; }
 
   h1, h2, h3, h4, h5, h6 {
@@ -76,15 +77,14 @@
 
 a.footnote {
   margin: 0 3px;
-  padding: 0.08em 0.4em 0.1em;
+  padding: 0.05em 0.4em 0.15em;
   font-family: system, -apple-system, ".SFNSDisplay-Regular", San Francisco, Lato, Apple SD Gothic Neo, 'Spoqa Han Sans', Nanum Barun Gothic,  Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
   font-size: 0.9em;
-  color: $link-text-color;
-  font-weight: 700;
+  color: $text-gray-color;
+  font-weight: 500;
   line-height: 1;
-  border: 1px solid $link-color;
-  border-radius: 20px;
-  background-color: rgba($link-color, 0.05);
+  border: 1px solid $oc-gray-5;
+  border-radius: 3px;
   background-image: none;
   transition: background-color .2s ease,
               color .2s ease,
