@@ -6,8 +6,8 @@
   padding: 0 3%;
 
   @media (max-width: 543px) {
-    padding: 6px 0;
-    background-color: $oc-gray-1;
+    padding: 4px 0;
+    background-color: $oc-gray-0;
   }
 }
 
@@ -23,7 +23,7 @@
   margin: auto 9%;
   padding: 10% 0;
   overflow: auto;
-  border-top: 1px solid $hr-color;
+  border-top: 0.5px solid $hr-color;
 
   &:first-child {
     border-top: none;
@@ -45,17 +45,17 @@
 // Post card - Mobile style
 @media (max-width: 543px) {
   .post-summary {
-    margin: 0 0 6px;
+    margin: 0 0 4px;
     padding: 6% 5%;
     background-color: $oc-white;
-    border-bottom: 1px solid $hr-color;
+    border-bottom: 0.5px solid $hr-color;
 
     &:first-child {
       border-top: 0.5px solid $hr-color;
     }
 
     &:hover {
-      margin: 0 0 6px;
+      margin: 0 0 4px;
       padding: 6% 5%;
       border-radius: 0;
       border-top: 0.5px solid $hr-color;
@@ -73,7 +73,7 @@
 }
 
 .post-title {
-  @include post-title(42px, 26px);
+  @include post-title(42px, 24px);
 }
 
 .description {
