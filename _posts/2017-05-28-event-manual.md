@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: 초심자를 위한 100명 규모의<br>행사 매뉴얼
+title: 초심자를 위한 100명 규모의 <br>행사 매뉴얼
 description: 행사를 개최해본 경험이 전혀 없는 사람이 맨땅에서 기획부터 실행까지 하기란 쉽지 않은 일이다. 그래서 Behance portfolio reviews를 진행했던 과정을 정리해 행사를 열고자 하는 이들에게 도움이 되고자 한다.
 publish: true
 ---
