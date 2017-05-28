@@ -14,6 +14,23 @@
     <meta name="application-name" content="&nbsp;"/>
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-TileImage" content="https://yeun.github.io/images/favicons/mstile-144x144.png" />
+    <meta name="description" content="" />
+    <meta name="application-name" content="Heeyeun's blog"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="twitter:creator" content="@_heeyeun" />
+    <meta name="twitter:card" content="photo">
+    <meta name="twitter:title" content="Heeyeun{% if page.title %} | {{ page.title }}{% endif %}">
+    <meta name="twitter:site" content="@_heeyeun">
+    <meta name="twitter:url" content="https://yeun.github.io{% if page.url %}{{ page.url }}{% endif %}">
+    <meta name="twitter:text:description" content="{% if page.description %}{{ page.description }}{% endif %}">
+    <meta name="twitter:image" content="{% if page.url == '/' %}https://yeun.github.io/images/og-image.jpg{% endif %}">
+    {% if page.url == '/' %}
+    <meta property="og:title" content="Heeyeun" />
+    {% endif %}
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yeun.github.io{% if page.url %}{{ page.url }}{% endif %}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% endif %}" />
+    <meta property="og:image" content="{% if page.url == '/' %}https://yeun.github.io/images/og-image.jpg{% endif %}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/css/normalize.css" media="screen">
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
