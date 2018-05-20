@@ -6,8 +6,7 @@
   padding: 0 3%;
 
   @media (max-width: 543px) {
-    padding: 4px 0;
-    background-color: $oc-gray-0;
+    padding: 4px 6%;
   }
 }
 
@@ -45,21 +44,23 @@
 // Post card - Mobile style
 @media (max-width: 543px) {
   .post-summary {
-    margin: 0 0 4px;
-    padding: 6% 5%;
+    margin: 0;
+    padding: 6% 0;
     background-color: $oc-white;
-    border-bottom: 0.5px solid $hr-color;
 
-    &:first-child {
-      border-top: 0.5px solid $hr-color;
+    .post-title {
+      transition: color 0.2s ease-out;
     }
 
     &:hover {
-      margin: 0 0 4px;
-      padding: 6% 5%;
+      padding: 6% 0;
+      background-color: $oc-white;
       border-radius: 0;
-      border-top: 0.5px solid $hr-color;
-      border-bottom: 0.5px solid $hr-color;
+
+        border-color: $hr-color;
+      .post-title {
+        color: $oc-teal-5;
+      }
 
       + .post-summary {
         border-color: $hr-color;
