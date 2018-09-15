@@ -18,10 +18,11 @@ a {
 
 figure {
   margin: 0 auto;
+  max-width: 100%;
 }
 
 img {
-  margin: 0 auto $margin-bottom-base;;
+  margin: 0 auto $margin-bottom-base;
   padding: 10px 0;
   display: block;
   max-width: 100%;
@@ -36,7 +37,7 @@ figcaption {
 }
 
 hr {
-  height: 1px;
+  height: 0.5px;
   width: 50%;
   margin: 3em auto;
   border: 0;

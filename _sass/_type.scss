@@ -29,18 +29,18 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2 {
   margin-top: 2em;
-  font-size: 34px;
+  @include font-size(34px, 28px);
   margin-bottom: 1em;
   font-weight: 800;
 }
 
 h3, h4 {
-  font-size: 28px;
-  margin-bottom: 1em;
+  @include font-size(28px, 22px);
+  margin-bottom: 0.5em;
 }
 
 h5, h6 {
-  font-size: 22px;
+  @include font-size(22px, 18px);
   margin-bottom: 1.2em;
 }
 

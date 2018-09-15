@@ -3,7 +3,7 @@ paginate: 20
 paginate_path: "/page/page:num/"
 markdown: kramdown
 host: 0.0.0.0
-plugins: [jekyll-paginate]
+gems: [jekyll-paginate]
 home_url: "https://heeyeun.github.io"
 representing_image: ""
 future: true
