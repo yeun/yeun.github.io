@@ -2,26 +2,56 @@
 layout: default
 ---
 
-<div class="wrapper">
-  <div class="container">
-    <div class="post-list">
-      <div class="posts">
-        {% for post in paginator.posts %}
-          <a href="{{ post.url }}" class="post-summary">
-            <div class="post-date">
-              {{ post.date | date_to_string }}
+<!-- Swiper CSS/JS -->
+<link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+<script src="swiper/swiper-bundle.min.js"></script>   
+
+  
+
+    <div id="prequel">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="image/slide01.jpg?v=4" />
+              </div>
+              <!-- <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </div> -->
             </div>
-            <h3 class="post-title">
-              {{ post.title }}
-            </h3>
-            <div class="post-info description">
-              {{ post.description }}
-            </div>
-          </a>
-        {% endfor %}
-      </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
-  </div>
-</div>
 
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },            
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+            clickable: true,
+            },
+        });
+    </script>
+</body>
 
+---
+layout: foot
+---
