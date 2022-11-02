@@ -4,6 +4,6 @@ paginate_path: "/page/page:num/"
 markdown: kramdown
 host: 0.0.0.0
 gems: [jekyll-paginate]
-home_url: "https://chansspace.github.io"
+home_url: "https://chanspace.github.io"
 representing_image: ""
 future: true
